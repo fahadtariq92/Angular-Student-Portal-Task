@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm, Validators } from '@angular/forms';
 import { FormControl, FormGroup, Validator } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { StoreDataService } from "../store-data.service";
+import { StoreDataService } from "../../store-data.service";
 import {Router} from '@angular/router';
 
 @Component({

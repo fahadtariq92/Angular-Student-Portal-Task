@@ -1,7 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { NgForm, Validators } from '@angular/forms';
 import { FormControl, FormGroup, Validator } from '@angular/forms';
-import { StoreDataService } from "../store-data.service";
+import { StoreDataService } from "../../store-data.service";
 import {Router} from '@angular/router';
 import { isNull } from '@angular/compiler/src/output/output_ast';
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {StoreDataService} from "../store-data.service";
+import {StoreDataService} from "../../store-data.service";
 import { Subscription } from 'rxjs';
 
 @Component({
