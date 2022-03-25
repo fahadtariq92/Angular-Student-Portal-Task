@@ -1,0 +1,17 @@
+.mCourse {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.mCourse h1 {
+  color: orange;
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.mCourse p {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}

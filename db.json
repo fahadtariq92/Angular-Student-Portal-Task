@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "student": [
+    {
+      "name": "Fahad Tariq",
+      "email": "fahad_tariq780@yahoo.com",
+      "image": "32260955_1090203627787412_8733072696490852352_n.jpg",
+      "id": 1
+    },
+    {
+      "name": "Mohsin Ali",
+      "email": "mohsinali@gmail.com",
+      "image": "24883314_1000688176738958_8016385848340035510_o.jpg",
+      "id": 2
+    },
+    {
+      "name": "Muhammad Ali",
+      "email": "m.ali@gmail.com",
+      "image": "22228529_967536923387417_8877505580287979243_n.jpg",
+      "id": 3
+    }
+  ]
+}

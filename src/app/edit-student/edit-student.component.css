@@ -1,0 +1,36 @@
+.eStudent {
+  margin: auto;
+  width: 100%;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+}
+
+span {
+  padding-left: 50px;
+  padding-top: 1000px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 400px;
+  font-family: "PT Sans", sans-serif;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  margin-top: 50px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: orange;
+  margin-left: 630px;
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}

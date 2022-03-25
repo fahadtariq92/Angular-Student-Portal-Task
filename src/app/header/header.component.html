@@ -1,0 +1,19 @@
+<nav>
+  <a routerLink="">
+    <img
+      src="../../assets/32260955_1090203627787412_8733072696490852352_n.jpg"
+      alt="pic"
+    />
+  </a>
+  <ul>
+    <li>
+      <a routerLink="/student-info"
+        >Student <span class="interpolate"> {{ noStudents }}</span></a
+      >
+    </li>
+    <li><a routerLink="/create-student">Create Student</a></li>
+    <li><a routerLink="/course">Course</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

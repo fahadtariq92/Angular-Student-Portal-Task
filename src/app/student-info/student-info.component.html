@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="sdata">
+  <h1>Students Data</h1>
+  <div *ngFor="let data of student">
+    <img src="assets\{{ data.image }}" alt="" />
+    <h2>Student Name</h2>
+    <h2>{{ data.name }}</h2>
+    <h4>Email : {{ data.email }}</h4>
+    <button
+      class="updateBtn"
+      [routerLink]="['edit-student', data.id]"
+      (click)="editStudent(data.id)"
+    >
+      Edit
+    </button>
+    <button class="deleteBtn" (click)="deleteStudent(data.id)">Delete</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

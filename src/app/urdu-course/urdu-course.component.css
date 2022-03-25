@@ -1,0 +1,17 @@
+.uCourse {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.uCourse h1 {
+  color: orange;
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.uCourse p {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}

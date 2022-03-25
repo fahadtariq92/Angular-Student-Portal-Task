@@ -1,0 +1,72 @@
+.sdata div {
+  width: 300px;
+  height: 400px;
+  float: left;
+  border: 2px solid orange;
+  border-radius: 15px;
+  margin-left: 110px;
+  margin-top: 30px;
+  box-shadow: 2px 5px 10px 2px orange;
+}
+
+.sdata div h2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 1.2rem;
+  color: orange;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sdata div h4 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sdata h1 {
+  margin: auto;
+  width: 100%;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.deleteBtn {
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.updateBtn {
+  background-color: orange;
+  width: 80px;
+  height: 40px;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+
+.updateBtn a {
+  color: black;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sdata img {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+}

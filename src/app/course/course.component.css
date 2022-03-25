@@ -1,0 +1,23 @@
+.cdata h1 {
+  margin: auto;
+  width: 100%;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.cdata li {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cdata a {
+  text-decoration: none;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+}

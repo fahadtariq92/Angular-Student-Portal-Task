@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="eStudent">
+  <h1>Edit Student</h1>
+</div>
+<form [formGroup]="editStudent" (ngSubmit)="EditStudent()">
+  <span>Student Name:</span>
+  <input
+    type="text"
+    name="name"
+    placeholder="Enter Student Name"
+    formControlName="name"
+  />
+  <br />
+  <span>Student Email:</span>
+  <input
+    type="text"
+    name="email"
+    placeholder="Enter Student Email"
+    formControlName="email"
+  />
+  <br />
+  <button>Edit Student</button>
+</form>

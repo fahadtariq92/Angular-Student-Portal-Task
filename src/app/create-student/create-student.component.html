@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="sdata">
+  <h1>Create Student</h1>
+</div>
+<div class="createStudentForm">
+  <form [formGroup]="createStudent" (ngSubmit)="AddStudent()">
+    <span class="field">Student Name:</span>
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter Student Name"
+      formControlName="name"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="name && name.invalid && name.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <span class="field">Student Email:</span>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter Student Email"
+      formControlName="email"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="email && email.invalid && email.touched"
+      >This field is invalid</span
+    >
+    <input
+      class="imageUpload"
+      type="file"
+      name="image"
+      accept="image/*"
+      (change)="onFileSelected($event)"
+    />
+    <br />
+    <button [disabled]="createStudent.invalid">Add Student</button>
+  </form>
+</div>

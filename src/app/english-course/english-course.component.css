@@ -1,0 +1,17 @@
+.eCourse {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.eCourse h1 {
+  color: orange;
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.eCourse p {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+}
