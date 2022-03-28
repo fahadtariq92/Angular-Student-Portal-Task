@@ -3,7 +3,7 @@ import { NgForm, Validators } from '@angular/forms';
 import { FormControl, FormGroup, Validator } from '@angular/forms';
 import { StoreDataService } from "../../store-data.service";
 import {Router} from '@angular/router';
-import { isNull } from '@angular/compiler/src/output/output_ast';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-create-student',
@@ -14,14 +14,14 @@ export class CreateStudentComponent implements OnInit {
   studentData:any;
   selectedFile:any;
   noStudents:any;
-  constructor(private storedataservice: StoreDataService, private route:Router) {
+  constructor(private storedataservice: StoreDataService, private route:Router, private spinner: NgxSpinnerService) {
    }
 
   ngOnInit(): void {
-    this.storedataservice.students().subscribe((data)=>{
-      this.studentData = data;
-      this.noStudents = this.studentData.length;
-    })
+    // this.storedataservice.students().subscribe((data)=>{
+    //   this.studentData = data;
+    //   this.noStudents = this.studentData.length;
+    // })
   }
  
   createStudent = new FormGroup({

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class StoreDataService {
   studEmail:any;
   updateData:any;
   noStudent:any;
-  private subject = new Subject<any>();
+  private subject = new BehaviorSubject<any>('0');
   constructor(private http: HttpClient) { }
 
 
@@ -26,14 +26,14 @@ export class StoreDataService {
     return this.subject.asObservable();
   }
 
-  countStudent(students:any){
-      return this.noStudent = students;
-  }
+  // countStudent(students:any){
+  //     return this.noStudent = students;
+  // }
 
 
-  getcountStudent(){
-      return this.noStudent;
-  }
+  // getcountStudent(){
+  //     return this.noStudent;
+  // }
 
 
   students(){

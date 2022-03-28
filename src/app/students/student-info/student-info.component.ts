@@ -10,6 +10,7 @@ export class StudentInfoComponent implements OnInit {
   student:any;
   sharedSpecData:any;
   imageResult:any;
+  studentLenght: any;
   constructor(private storedataservice: StoreDataService) {
       
    }
@@ -17,6 +18,7 @@ export class StudentInfoComponent implements OnInit {
   ngOnInit() : void {
     this.storedataservice.students().subscribe((data)=>{
       this.student = data;
+      this.studentLenght = this.student.length;
     })
   }
 

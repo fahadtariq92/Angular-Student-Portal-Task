@@ -14,16 +14,10 @@
       "id": 1
     },
     {
-      "name": "Mohsin Ali",
-      "email": "mohsinali@gmail.com",
+      "name": "Muhammad Tayyab",
+      "email": "m.tayyab@gmail.com",
       "image": "24883314_1000688176738958_8016385848340035510_o.jpg",
       "id": 2
-    },
-    {
-      "name": "Muhammad Ali",
-      "email": "m.ali@gmail.com",
-      "image": "22228529_967536923387417_8877505580287979243_n.jpg",
-      "id": 3
     }
   ]
 }

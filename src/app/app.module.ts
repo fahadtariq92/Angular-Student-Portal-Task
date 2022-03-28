@@ -15,6 +15,8 @@ import { MathCourseComponent } from './courses/math-course/math-course.component
 import { PhysicsCourseComponent } from './courses/physics-course/physics-course.component';
 import { EditStudentComponent } from './students/edit-student/edit-student.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
