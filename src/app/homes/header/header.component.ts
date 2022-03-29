@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import {StoreDataService} from "../../store-data.service";
 import { Subscription } from 'rxjs';
 import { NgxSpinnerService } from 'ngx-spinner';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,9 +14,11 @@ export class HeaderComponent implements OnInit {
   noStudents:any;
   getheaderEvent:Subscription;
   getShow:any;
-
+  logincondition = false;
+  registercondition = false;
+  logoutcondition = true;
   @Input() studentlngt: any;
-  constructor(private storedataservice: StoreDataService, private spinner: NgxSpinnerService) {
+  constructor(private storedataservice: StoreDataService, private spinner: NgxSpinnerService, private route:Router) {
     this.getheaderEvent = this.storedataservice.getheaderButtonEvent().subscribe((res)=>{
       this.ngOnInit()
     })
@@ -31,6 +34,27 @@ export class HeaderComponent implements OnInit {
        this.noStudents = this.student.length;
        console.log("hello");
     })
+    if(this.storedataservice.login === true){
+      this.logincondition = true;
+      this.registercondition = true;
+      this.logoutcondition = false;
+    }
+  }
+
+
+  loginbtn(){
+     this.route.navigate(['/login']);
+  }
+
+  registerbtn(){
+    this.route.navigate(['/register']);
+  }
+  
+  logoutbtn(){
+    setTimeout(()=>{
+      this.route.navigate(['/login']);
+      this.storedataservice.login = false;
+    },1000)
   }
 
 

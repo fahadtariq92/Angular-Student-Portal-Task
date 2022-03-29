@@ -10,6 +10,19 @@
     </li>
     <li><a routerLink="/create-student">Create Student</a></li>
     <li><a routerLink="/course">Course</a></li>
+    <button class="loginbtn" routerLink="/login" *ngIf="!logincondition">
+      Login
+    </button>
+    <button
+      class="registerbtn"
+      routerLink="/register"
+      *ngIf="!registercondition"
+    >
+      Register
+    </button>
+    <button class="logoutbtn" (click)="logoutbtn()" *ngIf="!logoutcondition">
+      Logout
+    </button>
   </ul>
 </nav>
 

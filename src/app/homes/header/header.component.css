@@ -50,3 +50,48 @@ span {
   border-radius: 20px;
   font-family: "PT Sans", sans-serif;
 }
+
+.loginbtn {
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.loginbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.registerbtn {
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.registerbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.logoutbtn {
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logoutbtn a {
+  text-decoration: none;
+  color: white;
+}

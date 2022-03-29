@@ -17,6 +17,8 @@ import { EditStudentComponent } from './students/edit-student/edit-student.compo
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     UrduCourseComponent,
     MathCourseComponent,
     PhysicsCourseComponent,
-    EditStudentComponent
+    EditStudentComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

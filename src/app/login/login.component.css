@@ -1,0 +1,71 @@
+img {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h1 {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.field {
+  padding-left: 50px;
+  padding-top: 1000px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 460px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.field2 {
+  padding-left: 50px;
+  padding-top: 1000px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 430px;
+  font-family: "PT Sans", sans-serif;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: orange;
+  margin-left: 630px;
+  font-family: "PT Sans", sans-serif;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  display: block;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.alert {
+  font-weight: bold;
+  margin-left: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

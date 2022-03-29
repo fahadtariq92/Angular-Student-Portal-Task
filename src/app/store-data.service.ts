@@ -7,6 +7,7 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 })
 export class StoreDataService {
   url = 'http://localhost:3000/student';
+  url2 = 'http://localhost:3000/teacher';
   sharedData:any;
   shareSpecData:any;
   shareSpecID:any;
@@ -15,6 +16,7 @@ export class StoreDataService {
   updateData:any;
   noStudent:any;
   private subject = new BehaviorSubject<any>('0');
+  login=false;
   constructor(private http: HttpClient) { }
 
 
@@ -41,8 +43,17 @@ export class StoreDataService {
   }
 
 
+  loginteachers(){
+    return this.http.get(this.url2);
+  }
+
+
   addStudents(data:any){
     return this.http.post(this.url,data);
+  }
+
+  addteachers(data:any){
+    return this.http.post(this.url2,data);
   }
 
 

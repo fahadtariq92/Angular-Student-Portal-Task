@@ -1,0 +1,36 @@
+<div>
+  <img src="../../assets/logo-2.png" alt="logo" />
+  <h1>Login Form</h1>
+  <form [formGroup]="loginTeacher" (ngSubmit)="LoginTeacher()">
+    <span class="field">Email:</span>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter Teacher Email"
+      formControlName="email"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="email && email.invalid && email.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <span class="field2">Password:</span>
+    <input
+      type="text"
+      name="password"
+      placeholder="Enter Teacher Password"
+      formControlName="password"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="password && password.invalid && password.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <button [disabled]="loginTeacher.invalid">Login</button>
+    <a class="createAccount" routerLink="/register">Create Account</a>
+  </form>
+</div>

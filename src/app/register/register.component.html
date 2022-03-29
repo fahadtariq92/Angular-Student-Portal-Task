@@ -1,0 +1,49 @@
+<div>
+  <img src="../../assets/logo-2.png" alt="logo" />
+  <h1>Registration Form</h1>
+  <form [formGroup]="registerTeacher" (ngSubmit)="RegisterTeacher()">
+    <span class="field">Teacher Name:</span>
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter Teacher Name"
+      formControlName="name"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="name && name.invalid && name.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <span class="field">Teacher Email:</span>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter Teacher Email"
+      formControlName="email"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="email && email.invalid && email.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <span class="passwordfield">Password:</span>
+    <input
+      type="text"
+      name="password"
+      placeholder="Enter Password"
+      formControlName="password"
+    />
+    <span
+      class="alert"
+      style="color: red"
+      *ngIf="password && password.invalid && password.touched"
+      >This field is invalid</span
+    >
+    <br />
+    <button [disabled]="registerTeacher.invalid">Register</button>
+  </form>
+</div>
