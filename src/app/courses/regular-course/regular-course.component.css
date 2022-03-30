@@ -1,0 +1,8 @@
+.regular {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  color: orange;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}

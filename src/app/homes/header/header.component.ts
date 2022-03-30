@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
   logincondition = false;
   registercondition = false;
   logoutcondition = true;
-  @Input() studentlngt: any;
   constructor(private storedataservice: StoreDataService, private spinner: NgxSpinnerService, private route:Router) {
     this.getheaderEvent = this.storedataservice.getheaderButtonEvent().subscribe((res)=>{
       this.ngOnInit()

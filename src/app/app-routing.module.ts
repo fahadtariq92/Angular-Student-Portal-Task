@@ -25,7 +25,7 @@ const routes: Routes = [
   },{
     path: "course",
     loadChildren:()=>import("./courses/courses.module").then(mod=>mod.CoursesModule),
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },{
     path: "student-info",
     loadChildren:()=>import("./students/students.module").then(mod=>mod.StudentsModule),
