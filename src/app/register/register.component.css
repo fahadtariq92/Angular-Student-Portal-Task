@@ -57,3 +57,15 @@ input {
   margin-left: 440px;
   font-family: "PT Sans", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: orange;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+}

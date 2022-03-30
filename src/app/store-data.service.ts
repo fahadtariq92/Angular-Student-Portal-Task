@@ -43,6 +43,11 @@ export class StoreDataService {
   }
 
 
+  loggedin(){
+    return this.login;
+  }
+
+
   loginteachers(){
     return this.http.get(this.url2);
   }
@@ -76,11 +81,12 @@ export class StoreDataService {
     return this.shareSpecData;
   }
 
-  setStudentData(id:any,name:any,email:any){
+  setStudentData(id:any,name:any,email:any,image:any){
      const updateurl = `http://localhost:3000/student/${id}`;
      this.updateData = this.http.put(updateurl,{
        name:name,
-       email:email
+       email:email,
+       image:image
      });
      return this.updateData;
   }

@@ -15,9 +15,15 @@
     },
     {
       "name": "Muhammad Tayyab",
-      "email": "m.tayyab@gmail.com",
+      "email": "tayyab@gmail.com",
       "image": "24883314_1000688176738958_8016385848340035510_o.jpg",
       "id": 2
+    },
+    {
+      "name": "Muhammad Ali",
+      "email": "ali@gmail.com",
+      "image": "22228529_967536923387417_8877505580287979243_n.jpg",
+      "id": 3
     }
   ],
   "teacher": [
@@ -32,6 +38,24 @@
       "email": "abdul@gmail.com",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Mohsin Mehdi",
+      "email": "mohsin@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Usman Ali",
+      "email": "usman@gmail.com",
+      "password": "usman123",
+      "id": 4
+    },
+    {
+      "name": "Abubakar",
+      "email": "abubakar@gmail.com",
+      "password": "123456",
+      "id": 5
     }
   ]
 }

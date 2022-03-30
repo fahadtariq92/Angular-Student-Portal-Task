@@ -32,11 +32,16 @@ export class LoginComponent implements OnInit {
             }, 1000);
             this.storedataservice.login = true;
             break;
+           }else{
+            setTimeout(() => {
+              alert("Password is incorrect");
+            }, 1000);
+            break;
            }
          }
          if(i === this.teachersData.length-1){
           setTimeout(() => {
-            alert("Email and Password not Exist");
+            alert("Email not Exist");
           }, 1000);
          }
        }

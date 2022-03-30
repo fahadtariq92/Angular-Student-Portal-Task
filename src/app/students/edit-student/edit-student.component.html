@@ -1,23 +1,40 @@
 <app-header></app-header>
-<div class="eStudent">
-  <h1>Edit Student</h1>
+<div class="editform">
+  <div class="eStudent">
+    <h1>Edit Student</h1>
+  </div>
+  <form [formGroup]="editStudent" (ngSubmit)="EditStudent()">
+    <span>Student Name:</span>
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter Student Name"
+      formControlName="name"
+    />
+    <span>Student Email:</span>
+    <input
+      type="text"
+      name="email"
+      placeholder="Enter Student Email"
+      formControlName="email"
+    />
+    <br />
+    <input
+      class="imageUpload"
+      type="image"
+      src="assets\{{ imageName }}"
+      name="image"
+    />
+    <br />
+    <h4 class="newh4">Upload New Image:</h4>
+    <input
+      class="newimage"
+      type="file"
+      name="image"
+      accept="image/*"
+      (change)="onFileSelected($event)"
+    />
+    <br />
+    <button>Edit Student</button>
+  </form>
 </div>
-<form [formGroup]="editStudent" (ngSubmit)="EditStudent()">
-  <span>Student Name:</span>
-  <input
-    type="text"
-    name="name"
-    placeholder="Enter Student Name"
-    formControlName="name"
-  />
-  <br />
-  <span>Student Email:</span>
-  <input
-    type="text"
-    name="email"
-    placeholder="Enter Student Email"
-    formControlName="email"
-  />
-  <br />
-  <button>Edit Student</button>
-</form>

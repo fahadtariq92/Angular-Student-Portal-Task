@@ -1,3 +1,11 @@
+.editform {
+  border: 2px solid orange;
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .eStudent {
   margin: auto;
   width: 100%;
@@ -5,24 +13,25 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-left: 20px;
   font-family: "PT Sans", sans-serif;
 }
 
 span {
   padding-left: 50px;
-  padding-top: 1000px;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-left: 400px;
+  margin-left: 330px;
   font-family: "PT Sans", sans-serif;
 }
 
 input {
   width: 200px;
   height: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-left: 10px;
   margin-left: 10px;
+  display: inline;
 }
 
 button {
@@ -30,7 +39,32 @@ button {
   height: 30px;
   background-color: black;
   color: orange;
-  margin-left: 630px;
-  margin-top: 20px;
+  margin-left: 550px;
   font-family: "PT Sans", sans-serif;
+  border-radius: 50px;
+}
+
+.imageUpload {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  color: orange;
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  border-radius: 50px;
+}
+
+.newimage {
+  position: absolute;
+  right: 80px;
+  top: 350px;
+}
+
+form h4 {
+  color: black;
+  position: absolute;
+  display: inline;
+  right: 290px;
+  top: 380px;
 }

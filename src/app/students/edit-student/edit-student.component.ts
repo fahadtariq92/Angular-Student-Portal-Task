@@ -16,6 +16,9 @@ export class EditStudentComponent implements OnInit {
   dataID:any;
   name:any;
   email:any;
+  image:any;
+  selectedFile:any;
+  imageName: any;
   constructor(private route: ActivatedRoute, private storedataservice: StoreDataService,private router:Router) {
       
    }
@@ -25,21 +28,44 @@ export class EditStudentComponent implements OnInit {
       this.sID = param['id'];
       console.log(this.sID);
       this.storedataservice.setData(this.sID);
-  })
+    })
     this.storedataservice.getData().subscribe((data:any)=>{
       this.dataID = data;
+      this.imageName = this.dataID.image;
       this.editStudent.setValue({
       "name": this.dataID.name,
-      "email": this.dataID.email
+      "email": this.dataID.email,
+      "image": this.dataID.image
     })
+    console.log("studen", this.editStudent)
     });
   }
   
 
   editStudent = new FormGroup({
-     name: new FormControl(),
-     email: new FormControl()
+    name: new FormControl('',[Validators.required]),
+    email: new FormControl('',[Validators.required, Validators.email]),
+    image: new FormControl('')
   })
+
+  onFileSelected(event:any){
+    this.selectedFile = <File>event.target.files[0].name;
+    var reader = new FileReader();
+    this.editStudent.patchValue({
+      image: this.selectedFile
+    })
+    this.imageName = this.selectedFile;
+    // reader.onload = ()=> {
+    //     this.url = reader.result;
+    //     console.log("abcccccsdgfefgdfg",this.url);
+    //     this.createStudent.patchValue({
+    //       image: reader.result
+    //     });
+    //     this.createStudent.get('image')?.setValue('this.url');
+    //     this.createStudent.controls.image.setValue(this.url);
+    // }
+    // reader.readAsDataURL(this.selectedFile); 
+  }
 
 
 
@@ -47,13 +73,12 @@ export class EditStudentComponent implements OnInit {
   EditStudent(){
      this.name = this.editStudent.get('name')?.value;
      this.email = this.editStudent.get('email')?.value;
-     console.log(this.name);
-     console.log(this.email);
-     console.log(this.sID);
-     this.storedataservice.setStudentData(this.sID,this.name,this.email).subscribe((data2:any)=>{
-      console.log(data2);
+     this.image = this.editStudent.get('image')?.value;
+     this.storedataservice.setStudentData(this.sID,this.name,this.email,this.image).subscribe((data2:any)=>{
       this.router.navigate(['./student-info']);
   });
   }
+
+  
 
 }
